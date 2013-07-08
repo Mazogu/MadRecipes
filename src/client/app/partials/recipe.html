@@ -1,0 +1,68 @@
+  <tabs>
+  <pane heading='Recipe'>
+    <form name='recipeForm' ng-submit='submit()'>
+      <fieldset>
+        <div class="control-group">
+          <label class="control-label required" for="recipeName">Recipe name</label>
+          <div class="controls">
+            <input id="recipeName" ng-model="form.recipeName" class="input-xlarge" required type="text">    
+          </div>
+        </div>
+
+        <div class="control-group">
+          <label class="control-label required" for="description">Description</label>
+          <div class="controls">
+            <input id="description" ng-model="form.description" class="input-xlarge" required type="text">    
+          </div>
+        </div>
+
+        <div class='control-group'>
+          <label class='control-label required' for='ingredients'>Ingredients</label>
+          <div class="controls" style='margin-bottom: 5px'>
+            <input ng-model='ingredient.value' type='text' /> 
+            <a class='btn' ng-click='ingredientAdd()' style='margin-top:-2px' 
+            ng-disabled='ingredientAddDisabled()'>Add</a>
+            <div>
+              <div ng-repeat='ingredient in ingredients' style='padding-top: 2px; padding-bot:2px'><span>{{ingredient.name}}</span>&nbsp;<span class='badge badge-important' ng-click='ingredientRemove($index)'>X</span>
+            </div>
+          </div>
+        </div>
+        <div class="control-group">
+          <label class="control-label required" for="directions">Directions</label>
+          <div class="controls">
+            <textarea id='directions' ng-model='form.directions' required></textarea>   
+          </div>
+        </div>
+         <button class='btn btn-primary' type='submit' ng-disabled='recipeForm.$invalid'>Submit</button>
+      </fieldset>
+    </form>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+  </pane>
+  <pane heading="Preview">
+    <h3>Message preview</h3>
+    The following message will be emailed to us and sent to you for reference. Click the <b>Form</b> tab to modify or send it.
+    <br/>
+    <br/>
+    <div id='message'>
+      <h4>Email</h4>
+      <div class='field'>{{form.email}}</div>
+
+      <h4>First name</h4>
+      <div class='field'>{{form.firstName}}</div>
+
+      <h4>Last name</h4>
+      <div class='field'>{{form.lastName}}</div>
+
+      <div ng-show='additionalSkills.length > 0'>
+        <h4>Additional skills</h4>
+        <ul>
+          <li ng-repeat='skill in additionalSkills'>{{skill.name}}</li>
+        </ul>
+      </div>
+
+  </pane>
+</tabs>

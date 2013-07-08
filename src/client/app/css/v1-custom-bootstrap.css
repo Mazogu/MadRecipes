@@ -1,0 +1,405 @@
+@charset "utf-8";
+@import url("bootstrap.css");
+@import url("bootstrap-responsive.css");
+
+/* V1 - custom Bootstrap - Styles */
+
+	body {
+		/* fonts used are matched to the VersionOne Corporate Website */
+		/* Segoe UI Weights are Thin: 200, Regular:400, SemiBold: 600,  Bold: 800 */
+		/* the fallback font Lucida Sans Unicode does not have font set weights so it will follow the browser */
+  		font-family: "Segoe UI",Lucida Sans Unicode,Lucida Grande,sans-serif;
+		font-weight: 400; /* defaulting to semi-bold */
+  		/* font-size uses the bootstrap default of 14px */
+		background: #f8f8f8;
+		color: #454545;
+		}
+		
+	a, .btn-link {
+  		color: #00496B;
+		}
+		
+	h1 {
+		font-weight:200;
+		color: #212121;
+	}
+	
+	h2, h3 {
+		font-weight: 400;
+		color: #212121;
+	}
+	
+	p a {
+		text-decoration: underline;
+	}
+	
+	/* buttons */
+	
+	 a.btn {
+		text-decoration: none;
+	}
+
+	
+	/* V1 corp colors */
+	
+	.colors .v1-red {
+			background-color: #8E073A;
+	}
+	
+	.colors .link-blue {
+			background-color: #00496B;
+	}
+	
+	.colors .help-orange {
+			background-color: #DB692B;
+	}
+	
+	.colors .lite-blue {
+			background-color: #ACCBDC;
+	}
+	
+	.colors .faint-gray {
+			background-color: #F2F2F2;
+			color: inherit;
+	}
+	
+	.colors .medium-gray {
+			background-color: #AAA;
+	}
+		
+	/* nav bar styling */
+
+	.navbar .brand {
+				letter-spacing: -0.03em;
+				font-size: 1.5em;
+		}
+		
+	.navbar .nav .active > a,
+	.navbar .nav .active > a:hover,
+	.navbar .nav .active > a:focus {
+  				color: #8E073A; /* VersionOne Red Accent */
+				background-image: none;
+				box-shadow: none;
+		}
+		
+	.navbar-inverse .navbar-inner {
+				background-color: black;
+			    background-image: none;
+		}
+		
+	.navbar-inverse .nav .active > a,
+	.navbar-inverse .nav .active > a:hover,
+	.navbar-inverse .nav .active > a:focus,
+	.nav-pills > .active > a,
+	.nav-pills > .active > a:hover,
+	.nav-pills > .active > a:focus,
+	.nav-list > .active > a,
+	.nav-list > .active > a:hover,
+	.nav-list > .active > a:focus {
+  				background-color: #8E073A; /* VersionOne Red Accent */
+				color: #ffffff;
+				background-image: none;
+				box-shadow: none;
+		}
+		
+	.navbar-inverse .navbar-inner li a:hover {
+			background-color: rgba(255,255,255,0.2);
+			transition: background-color 0.4s;
+	}
+		
+	.navbar-inverse .navbar-inner li a {
+			transition: color 0.4s;
+			transition: background-color 0.4s;
+	}
+	
+	.navbar-fixed-top {
+		margin-bottom: 0;
+	}
+	
+	/* Buttons - being careful not to override the addtional button styles the selector used below only styles the button in its default state*/
+	
+		.btn {
+  			color: #00496b;
+		}
+		
+		.btn-primary, .btn-info, .btn-success, .btn-warning, .btn-danger, .btn-inverse {
+			color: #ffffff;
+			border: 0;
+		}
+		
+		.btn-info {
+			background: #2F96B4;
+		}
+		
+		.btn-success {
+			background: #7a5;
+		}
+		
+		.btn-warning, .btn:hover.btn-warning {
+			background: #DB692B;
+		}
+		
+		.btn-danger {
+			background: #ff0000;
+		}
+		
+		.btn-inverse {
+			background: #000000;
+		}
+
+		.btn:hover,
+		.btn:focus,
+		.btn:active,
+		.btn.active,
+		.btn.disabled,
+		.btn[disabled] {
+			color:#0088cc;
+			border-color: #88ccff;
+			transition: all 0.4s;
+		}
+		
+	.btn-primary {
+			background-color: #8E073A; /* VersionOne Red Accent */
+			background-image: none;
+			box-shadow: none;
+			color:#fff;
+			border: none;
+	}
+		
+	.btn-primary, 
+	.btn-primary:hover,
+	.nav > li > a, 
+	.nav > li > a:hover,
+	.nav > li > a:focus {
+				transition: background-color 0.4s;
+	}
+	
+	.nav > li > a:hover,
+	.nav > li > a:focus {
+			color: #777;
+			background-color: #eee;
+	}
+		
+	.btn-primary:hover,
+	.btn-primary:focus,
+	.btn-primary:active,
+	.btn-primary.active,
+	.btn-primary.disabled,
+	.btn-primary[disabled]  {
+				background-color: #00496B; /* link-blue */
+	}
+	
+	.btn:hover.btn-link {
+			border-color: transparent;
+			text-decoration: underline;
+		}
+	
+	.btn:hover.btn-primary, 
+	.btn:hover.btn-info, 
+	.btn:hover.btn-success, 
+	.btn:hover.btn-warning, 
+	.btn:hover.btn-danger, 
+	.btn:hover.btn-inverse,
+	.btn:active.btn-primary, 
+	.btn:active.btn-info, 
+	.btn:active.btn-success, 
+	.btn:active.btn-warning, 
+	.btn:active.btn-danger, 
+	.btn:active.btn-inverse,
+	.btn:focus.btn-primary, 
+	.btn:focus.btn-info, 
+	.btn:focus.btn-success, 
+	.btn:focus.btn-warning, 
+	.btn:focus.btn-danger, 
+	.btn:focus.btn-inverse {
+			color: #ffffff;
+			border: 0;
+			box-shadow: inset 0 0 50px rgba(0,0,0,0.2);
+		}
+		
+	.btn:hover.btn-inverse {
+		box-shadow: inset 0 0 50px rgba(255,255,255,0.2); 
+	}
+		
+	.navbar-inverse .navbar-link {
+  				color: #ccc;
+		}
+		
+	.navbar-inverse .navbar-text {
+				color: #aaa;
+	}
+	
+	.well, .hero-unit {
+ 		 background-color: #fff;
+		 border: 0;
+  		 box-shadow: 0 0 4px #e3e3e3;
+	}
+	
+	.hero-unit h1 {
+		font-size: 2.6em;
+		letter-spacing: -0.03em;
+		color: #212121;
+	}
+	
+	.hero-unit p {
+		margin: 10px 0;
+	}
+	
+	
+	/* -- this is apprently not good practive if an item has tooltips or popovers since thos items will inherit these styles -- */
+	.colors > div {
+		padding: 0.8em;
+		color: #fff;
+		width: 150px;
+	}
+	
+	.colors > div.popover {
+		padding: 1px;
+		color: #454545;
+	}
+	
+	/* table */
+	
+	.table th,
+	.table td {
+  		padding: 8px;
+  		line-height: 20px;
+  		text-align: left;
+  		vertical-align: top;
+  		border-top: 1px solid #dddddd;
+	}
+
+	.table th {
+  		font-size: 1.2em;
+		font-weight: 400;
+		background: #eee;
+	}
+	
+	.table-striped tbody > tr:nth-child(odd) > td,
+	.table-striped tbody > tr:nth-child(odd) > th {
+  	background-color: #eee;
+	}
+	
+	/* Form Elements */
+	
+	label, select, button, input[type="button"], input[type="reset"], input[type="submit"], input[type="radio"], input[type="checkbox"] {
+			vertical-align: text-top;
+	}
+	
+	code {
+		overflow: auto;
+		width: 100%;
+		display: block;
+		padding: 0.5em;
+		color: #8E073A;
+	}
+	
+	.block-children > * {
+		display: block;
+	}
+	
+	/* scaffolding fix */
+	.row-fluid [class*="span"] {
+			overflow: hidden;
+	}
+	
+	.carousel-container {
+		position: relative;
+		max-height: 400px;
+		margin: 1em 0;
+	}
+	
+	.carousel-control {
+		font: 32px Lucida Sans Unicode,Lucida Grande,sans-serif;
+		z-index: 2000;
+		line-height: .85em;
+		top:50%;
+		width: 30px;
+		height: 30px;
+	}
+
+	.carousel-caption {
+		top: 0px;
+		bottom: auto;
+	}
+
+	.content-top {
+		padding-top: 20px;
+	}
+	
+	@media (min-width: 319px) {
+		.affix {position: static;}
+	}
+	
+	@media (min-width: 767px) {
+		
+	}
+	
+	@media (min-width: 979px) {
+		.content-top {padding-top: 100px;}
+		.sidebar-nav{width: 200px;}
+		.affix {position: fixed;}
+	}
+	
+	@media (min-width: 1200px) {
+		.sidebar-nav{width: 270px;}
+	}
+	
+	.toggler {
+		border: 1px solid #ccc;
+		border-top-color: #ddd;
+		border-bottom-color: #bbb;
+		border-radius: 3px;
+		display: inline-block;
+		color: #DB692B;
+		padding: 0 1.4em;
+		cursor: pointer;
+		text-transform: uppercase;
+		font-size: 0.8em;
+		font-weight: 700;
+		background: rgb(255,255,255); /* Old browsers */
+background: -moz-linear-gradient(top,  rgba(255,255,255,1) 0%, rgba(238,238,238,1) 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,1)), color-stop(100%,rgba(238,238,238,1))); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(238,238,238,1) 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(238,238,238,1) 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(238,238,238,1) 100%); /* IE10+ */
+background: linear-gradient(to bottom,  rgba(255,255,255,1) 0%,rgba(238,238,238,1) 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#eeeeee',GradientType=0 ); /* IE6-9 */
+
+		box-shadow: 0 1px 2px #e3e3e3;
+
+	}
+	
+	.toggler:hover {
+		background: #eee;
+		color:gray;
+	}
+	
+	.collapse-toggle {
+		border-bottom: 1px solid #eee;
+		height: 12px;
+		margin: 12px 0;
+	}
+
+    .section { 
+    	background-color: #fff; 
+    	border-radius: 6px; 
+    	padding: 1em; 
+    	margin: 0.4em 0; 
+    	box-shadow: 0 2px 4px #eee; 
+    }
+
+	.markdown {
+
+	}
+    .markdown h1 {
+		font-size: 14pt;
+    }
+
+    .markdown h2 {
+
+    }
+
+    .markdown h3 {
+
+    }

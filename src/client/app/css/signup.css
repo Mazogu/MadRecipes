@@ -1,0 +1,21 @@
+/* app css stylesheet */
+
+body {
+  margin: 10px;
+}
+
+.required {
+  font-weight: bold;
+}
+
+.btn span {
+  vertical-align: middle;
+}
+
+.msg-block {
+    margin-top:5px;
+}
+.msg-error {
+    color:#F00;
+    font-size:14px;
+}
